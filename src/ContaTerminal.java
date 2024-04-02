@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class ContaTerminal{
     public static void main(String[] args){
+        
     Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
     System.out.println("Digite a sua agência:");
@@ -19,5 +20,9 @@ public class ContaTerminal{
     float saldo = scanner.nextFloat();
     
     System.out.println("Olá " + nome + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + " conta " + numero + " e o seu saldo " + saldo + " já esta disponível para saque.");
+    
+    scanner.close();
+
     }
+
 }
